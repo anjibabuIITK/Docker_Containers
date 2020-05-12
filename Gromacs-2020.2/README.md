@@ -2,7 +2,8 @@
 # Docker file to build Gromacs-2020.2 container with base opensuse/leap
 
 **Dockerfile**
-``# ------------------------------------------------
+```
+# ------------------------------------------------
 # Dockerfile to run Gromacs-2020.2 on an opensuse/leap base
 # for both serial and mpi versions.
 #
@@ -46,7 +47,6 @@ RUN useradd -m -s /bin/bash -N -u $UID $USER
 USER $USER
 RUN mkdir /home/$USER/scratch
 WORKDIR /home/$USER/scratch
-`
 
 ```
 **Build from Dockerfile**
